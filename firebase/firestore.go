@@ -13,7 +13,7 @@ var FirestoreClient *firestore.Client
 func InitializeFirestore() *firestore.Client {
 	projectid := "restapi-using-golang-crud"
 	ctx := context.Background()
-	opt := option.WithCredentialsFile("restapi-using-golang-crud-firebase-adminsdk-8t3ja-4390d693a0.json")
+	opt := option.WithCredentialsFile("restapi-using-golang-crud-firebase-adminsdk-8t3ja-430.json")
 	client, err := firestore.NewClient(ctx, projectid, opt)
 	if err != nil {
 		fmt.Println("failed to create client", err)
